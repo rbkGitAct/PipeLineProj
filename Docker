@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/PipeLineProj.jar PipeLineProj.jar
+ENTRYPOINT ["java","-jar","/PipeLineProj.jar"]
